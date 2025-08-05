@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>HOOP SCORE</h1>
+    <h2>Live Basketball Scorecard</h2>
+    <div class="display-board">
+      <div class="container">
+        <div class="scorecard">
+          <h3>HOME</h3>
+          <div class="score" id="home-score-el">0</div>
+          <div class="score-buttons">
+            <button onclick="home_add_1()">+1</button>
+            <button onclick="home_add_2()">+2</button>
+            <button onclick="home_add_3()">+3</button>
+          </div>
+          <div class="fouls-container">
+            <div>Fouls: <span id="home-foul-number">0</span></div>
+            <button class="foul-btn" onclick="home_incrementFoul()">
+              +Foul
+            </button>
+          </div>
+        </div>
+        <div class="scorecard">
+          <h3>GUEST</h3>
+          <div class="score" id="guest-score-el">0</div>
+          <div class="score-buttons">
+            <button onclick="guest_add_1()">+1</button>
+            <button onclick="guest_add_2()">+2</button>
+            <button onclick="guest_add_3()">+3</button>
+          </div>
+          <div class="fouls-container">
+            <div>Fouls: <span id="guest-foul-number">0</span></div>
+            <button class="foul-btn" onclick="guest_incrementFoul()">
+              +Foul
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="new-game-btn" onclick="newGame()">🏀 New Game</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

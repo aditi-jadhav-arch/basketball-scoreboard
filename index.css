@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Segoe UI;
+    text-align: center;
+    background-color: rgb(15, 15, 16);
+    background-image: url("./images/basketball-court.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    color: rgb(249, 122, 31);
+    font-size: 48px; 
+    font-weight: 900;
+    margin-bottom: 0.3rem;
+    margin-top: 2rem;
+    text-shadow: 0px 0px 4px black;
+}
+
+h2 {
+    color: rgb(209, 209, 213);
+    font-size: 20px; 
+    text-shadow: 0px 0px 4px black;
+}
+
+.display-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem; 
+    margin-top: 40px; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4rem; 
+}
+
+.scorecard {
+    width: 360px; 
+    padding: 1rem; 
+    border: 5px solid rgb(58, 58, 60);
+    border-radius: 8px;
+    background-color: rgb(24, 24, 27);
+    transition: border 0.5s;
+}
+
+.scorecard:hover {
+    border: 5px solid rgba(253, 154, 83, 0.3)
+}
+
+.scorecard h3 {
+    color: rgb(250, 250, 250);
+    font-size: 20px; 
+}
+
+.score {
+    color: rgb(250, 250, 250);
+    font-size: 72px; 
+    font-weight: 900;
+    margin-bottom: 1.2rem; 
+}
+
+.score-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem; 
+    margin-bottom: 1.5rem; 
+}
+
+.score-buttons button {
+    padding: 10px 28px; 
+    font-size: 18px; 
+    font-weight: 700;
+    background-color: rgb(249, 122, 31);
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.2s, transform 0.2s ease-out;
+}
+
+.score-buttons button:hover {
+    background-color: rgb(251, 152, 81);
+}
+
+.score-buttons button:active {
+    transform: scale(0.95);
+}
+
+.fouls-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 1.5rem; 
+    padding-top: 0.8rem;
+    margin-top: 14px;
+    border-top: 1px solid gray;
+    margin-bottom: 14px;
+    color: white;
+}
+
+.fouls-container div {
+    font-size: 16px; 
+    color: rgb(161, 161, 170);
+    font-weight: bold;
+}
+
+#home-foul-number,
+#guest-foul-number {
+    color: white;
+    font-size: 18px; 
+}
+
+.foul-btn {
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 4px 10px; 
+    font-size: 1rem; 
+    font-weight: 700;
+    color: white;
+    background-color: rgb(15, 15, 16);
+    transition: color 0.15s, border 0.15s, transform 0.2s ease-out;
+}
+
+.foul-btn:hover {
+    color: rgb(239, 67, 67);
+    border: 1px solid rgb(239, 67, 67);
+}
+
+.foul-btn:active {
+    transform: scale(0.95);
+}
+
+.new-game-btn {
+    padding: 12px 32px; 
+    font-size: 1.2rem; 
+    font-weight: bold;
+    border: 2px solid rgb(44, 44, 48);
+    border-radius: 25px;
+    background-color: rgba(37, 37, 40);
+    color: white;
+    transition: transform 0.2s ease-out;
+}
+
+.new-game-btn:hover {
+    transform: scale(1.1);
+}
+
+.new-game-btn:active {
+    transform: scale(0.99);
+}
