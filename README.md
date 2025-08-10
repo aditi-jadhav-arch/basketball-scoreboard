@@ -18,6 +18,11 @@ Tracks scores, fouls, and highlights the leading team in real-time.
 ## 📷 Preview
 ![Basketball Scoreboard Screenshot](preview.png)
 
+## 🔗 Check it Out
+
+You can view the live site here:  
+👉 **[Hoop Score](https://aditi-jadhav-arch.github.io/basketball-scoreboard/)**
+
 ## 📁 Folder Structure
 
 ```
@@ -27,6 +32,7 @@ basketball-scoreboard/
 ├── index.css           # Stylesheet
 ├── index.js            # JavaScript functionality
 ├── README.md           # Project documentation
-└── assets/
-    ├── screenshot.png  # (optional) Screenshot for README preview
+├── preview.png         # Screenshot preview for readme
+└── images/
+    ├── basketball-court.jpeg  
 ```
